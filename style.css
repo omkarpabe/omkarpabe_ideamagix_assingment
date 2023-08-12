@@ -1,0 +1,207 @@
+*{margin: 0;padding: 0;}
+
+/* Common style for headers */
+header {display: flex;justify-content: space-between;align-items: center;background-color: white;color: black;padding: 10px 20px;}
+.mainlogo{width: 250px;height: 75px;margin-right: 10px;}
+
+/* Style for the first header's menu items and logos */
+.menu-items {
+list-style: none;margin: 0;padding: 0;display: flex;justify-content: space-between;align-items: center;}
+.menu-item {margin-right: 100px;display: flex;}
+.logos {display: flex;align-items: center;}
+.logo {width: 40px;height: 40px;margin-right: 10px;}
+.logo2{margin-left: 50px;
+  width: 60px;}
+  i {
+    font-size: 25px !important;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+/* Style for the second header */
+.second-header {background-color:#2ba9f2;padding: 10px 20px;display: flex;justify-content: space-between;align-items: center;color: white;}
+.second-menu-items {list-style: none;margin-left: 25px;padding: 0;display: flex;align-items: center;}
+.second-menu-item {margin-right: 20px;}
+li.second-menu-item {margin-right: 50px;}
+.search-bar {background-color: #107DF7;padding: 10px;border: none;width: 100%;height: 23px;margin-right: 25px;margin-top: -8px;margin-bottom: -10px;max-width: 220px; }
+
+  
+/* Style for the tab container */
+.tab-container {display: flex;justify-content: space-between;border-bottom: 1px solid lightblue;margin: 0 auto;}
+.tab-content{ margin: 20px; padding-left: 20px; display: flex;}
+.tab-content-container {display: flex;justify-content: space-between;padding: 15px; margin: 15px;margin: 0 auto;}
+  .tab-text{max-width: 700px; text-align: justify; }
+  .tab-text p{margin-bottom: 15px;}
+
+  /* Style for the tab buttons */
+.tab-button {background-color: white;border: none;padding: 15px 20px;cursor: pointer;flex: 1;transition: background-color 0.3s;}
+.tab-button:hover { border-bottom: 1px solid #107DF7;}
+  
+.para button {
+  background-color: #107DF7;
+  width: 175px;
+  height: 50px;
+  color: white;
+  border: none;
+}
+
+.para p span{
+  color: red;
+}
+ 
+.hero{ background-image: url('hero.jpg'); color: white; height: 400px;background-repeat: no-repeat;background-size: cover; display: flex; justify-content: space-between; }
+
+.hero div{margin-top: 25px; width: 500px;margin-left: 40px;}
+.hero div p{ margin-bottom: 20px;}
+
+.footerdata{background-color:#0B2432; height: 600px;  }
+footer{display: flex;justify-content: space-between;align-items: center;background-color: #107DF7;color: white;padding: 25px 20px; }
+.footable{color:white; padding: 20px; display: flex; border-bottom: 1px solid white;margin: 25px 10px 30px 10px; }
+.footable ul{margin-bottom: 20px; margin-right: 115px;margin-left: 50px; list-style-type: none;}
+.footable ul li{line-height: 25px;text-indent: -5px;}
+.footable ul li:before {content: "-";text-indent: -5px; margin-right: 8px; color: blue;}
+.footable ul p{margin-bottom: 10px; font-weight: bold;}
+
+/* Style for the form container */
+.form-container {
+  max-width: 250px;
+  
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-left: 200px;
+}
+
+/* Style for the form inputs */ 
+  input,textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    max-width: 227px;
+}
+
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style for the email validation message */
+.email-error {
+  color: red;
+}
+
+.accordion .accordion-item {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.accordion .accordion-item button[aria-expanded='true'] {
+  border-bottom: 1px solid #03b5d2;
+}
+
+.accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 0;
+  color: #7288a2;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.accordion button:hover,
+.accordion button:focus {
+  cursor: pointer;
+  color: #03b5d2;
+}
+
+.accordion button:hover::after,
+.accordion button:focus::after {
+  cursor: pointer;
+  color: #03b5d2;
+  border: 1px solid #03b5d2;
+}
+
+.accordion button .accordion-title {
+  padding: 1em 1.5em 1em 0;margin-left: 40px;
+}
+
+.accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+}
+
+.accordion button .icon::before {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+.accordion button .icon::after {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+
+.accordion button[aria-expanded='true'] {
+  color: #03b5d2;
+}
+.accordion button[aria-expanded='true'] .icon::after {
+  width: 0;
+}
+.accordion button[aria-expanded='true'] + .accordion-content {
+  opacity: 1;
+  max-height: 9em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 2em 0;
+}
+
+.upperfooter{height: 300px; background-color: #0EA4F7;margin-bottom: -30px; text-align: center; color: white; line-height: 50px;padding-top: 50px;}
+.upperfooter p{font-size: 20px;} .upperfooter h1{font-size: 50px;}
+.earlyfooter{display: flex; justify-content: center; margin-top: 25px;}
+.earlyfooter button{ background-color: #107DF7; width: 200px; color: white; border: none;}
+.earlyfooter p{ border-left: 1px solid white; margin-left: 20px; padding-left: 10px;font-size: 25px;}
+
+.footerlogo{margin-left: 40px;margin-top: 25px;}
+  .footer-content{display: flex; color: white;}
+  .footer-content div{margin-left: 100px;margin-top: 10px;}
+  .footer-content div p{margin-bottom: 15px;}
+
+  .lastfoot{display: block;}
+  .last-inner{width: 300px; background-color: white; color: black;margin-top: -50px; padding: 20px; border-radius: 10px;}
